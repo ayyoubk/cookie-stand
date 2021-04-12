@@ -1,19 +1,17 @@
 body{
-    
-    margin: 0%;
-
+    margin: 0%; 
+    background-image:url("https://static.vecteezy.com/system/resources/previews/000/108/346/original/free-bakery-pattern-vector.png");
 }
 header{
-    background-color:rgba(208, 175, 132, 0.7);
+    background-color:rgba(208, 175, 132, 0.822);
     height: 40px;
     text-align: center; 
-    font-family: fantasy; 
+    font-family:Arial, Helvetica, sans-serif; 
     
 }
 main{
-    background-image:url("https://static.vecteezy.com/system/resources/previews/000/108/346/original/free-bakery-pattern-vector.png");
     min-height: 600px;
-    color: #d2e69c;
+    
 }
 footer{
     background-color: rgba(180, 125, 53, 0.61);
@@ -26,10 +24,10 @@ table{
 }
 h1{
     margin-top: 0px;
-    color: #c8eed9;
+    
 }
 
-h3{
+h2{
     vertical-align: top;
     display: inline-block;
     background-color: rgba(208, 175, 132,.75);  
@@ -38,9 +36,7 @@ h3{
 
 table {
     font-family: arial, sans-serif;
-    display:inline-table ;
-    margin-top: 60px;
-    margin-right: 30px;
+    margin-left: 30px;
     border-collapse: collapse;
     color: black;
     
@@ -54,10 +50,4 @@ td, th {
   
 tr:nth-child(even) {
     background-color: #dddddd;
-}
-ul{
-    display: inline-block;
-    margin-right: 20px;
-    background-color: rgba(208, 175, 132,.75);  
-
 }
