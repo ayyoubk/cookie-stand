@@ -28,3 +28,6 @@
     3. work on design aspects of the public-facing page. And this work took like 2 hours.
 
 - April 13, 2021
+    1. write alot of line of HTML & CSS for public-facing index.html page.
+    2. using images that provided by pat
+
