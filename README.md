@@ -26,3 +26,5 @@
     1. Replace all of your object literals for the salmon cookie stand with a single constructor function.
     2. Replace the lists of your data for each store and build a single table of data
     3. work on design aspects of the public-facing page. And this work took like 2 hours.
+
+- April 13, 2021

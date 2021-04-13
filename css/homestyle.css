@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(37, 14, 14);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: cornsilk;
+    margin: 0%;
+}
+header{
+    background-color: rgba(222, 184, 135, 0.096);
+    
+}
+h1{
+    margin: 0%;
+    padding: 15px;
+    display: inline-block;
+}
+nav{
+    float: right; 
+    margin-top: 40px;
+}
+nav a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: cornsilk;
+}
+section{
+    position: relative;
+    padding: 30px;
+}
+#hero{
+    text-align: center;
+    padding: 30px;
+}
+main section div{
+    display:inline-block;
+    width: 50%;
+    position: absolute;
+    top: 0px;
+    right: 40px;    
+}  
+section img{
+    margin-top: 10px;    
+}
+#family{
+    padding: 30px;
+}
+#family p,#family h2{
+    display: inline-block;
+    width: 50%;
+    top: 0%;
+}
+#family img{
+    display: inline-block;
+    width: 40%;
+}
+#product{
+    padding: 30px;
+}
+#product img{
+    margin-right: 30px;
+}
+main article div {
+    display: inline-block;
+    padding: ;
+}
+footer{
+    height: 20px;
+    background-color: rgba(189, 183, 107, 0.39);
+    text-align: center;
+    padding: 0px;
+}
