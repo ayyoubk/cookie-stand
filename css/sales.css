@@ -9,6 +9,19 @@ header{
     font-family:Arial, Helvetica, sans-serif; 
     
 }
+h1{
+    display: inline-block;
+}
+a{
+    float: right;
+    color: rgb(66, 62, 62);
+    text-decoration: none;
+    font-size: large;
+    font-weight: bolder;
+    padding: 20px;
+    padding-top: 10px;
+
+}
 main{
     min-height: 600px;
     
