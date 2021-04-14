@@ -34,8 +34,9 @@ Store.prototype.calc=function(){
 };
 Store.prototype.render=function(){
   let tableRow=document.createElement('tr');
+  tableRow.setAttribute('class', 'row');
   table.appendChild(tableRow);
-  let tableData=document.createElement('td');
+  let tableData=document.createElement('th');
   tableRow.appendChild(tableData);
   tableData.textContent=this.branchName;
   for(let i=0;i<this.cookisPerHour.length;i++){
@@ -75,30 +76,43 @@ tableHeader=document.createElement('th');
 tableRow.appendChild(tableHeader);
 tableHeader.textContent='Daily Location Total';
 
+// get form
+const form =  document.getElementById('new-stand');
+form.addEventListener('submit', getForm);
+
 for(let b=0 ;b<branchs.length ;b++){
   branchs[b].calc();
   branchs[b].render();
 }
-
-// seattle.calc();
-// tokyo.calc();
-// dubai.calc();
-// paris.calc();
-// lima.calc();
-// seattle.render();
-// tokyo.render();
-// dubai.render();
-// paris.render();
-// lima.render();
+let lastRow=document.createElement('tr');
+table.appendChild(lastRow);
 finalRow();
+
 console.log(branchs);
 
 
 
+
+
+function getForm(event){
+  event.preventDefault();
+  let standLoc=event.target.loc.value;
+  let min=parseInt(event.target.min.value);
+  let max=parseInt(event.target.max.value);
+  let avg=parseFloat(event.target.avg.value);
+  let salesFcr=parseFloat(event.target.factor.value);
+  let newLoc= new Store(standLoc,min,max,avg,salesFcr);
+  newLoc.calc();
+  newLoc.render();
+  console.log(table.rows.length);
+  finalRow();
+}
+
 function finalRow(){
-  let lastRow=document.createElement('tr');
+  lastRow.remove();
+  lastRow=document.createElement('tr');
   table.appendChild(lastRow);
-  let tableData=document.createElement('td');
+  let tableData=document.createElement('th');
   lastRow.appendChild(tableData);
   tableData.textContent='Totals/hrs';
   let cookiesForAll=0;
