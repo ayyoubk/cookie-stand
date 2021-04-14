@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 'use strict';
 
 const hoursOfOpen= ['6 AM','7 AM','8 AM','9 AM','10 AM','11 AM','12 PM','1 PM','2 PM','3 PM','4 PM','5 PM','6 PM','7 PM'];
@@ -22,17 +23,14 @@ Store.prototype.randomCust=function(){
 Store.prototype.cookiesHourly=function(){
   for (let i=0;i<14;i++){
     this.cookisPerHour.push(Math.ceil(this.avgCookiesPercust*this.custNumHourly[i]*this.salesFactor));
-  }
-};
-Store.prototype.total=function(){
-  for(let i=0;i<14;i++){
     this.totalCookies=this.totalCookies+this.cookisPerHour[i];
   }
 };
+
 Store.prototype.calc=function(){
   this.randomCust();
   this.cookiesHourly();
-  this.total();
+  
 };
 Store.prototype.render=function(){
   let tableRow=document.createElement('tr');
@@ -77,16 +75,21 @@ tableHeader=document.createElement('th');
 tableRow.appendChild(tableHeader);
 tableHeader.textContent='Daily Location Total';
 
-seattle.calc();
-tokyo.calc();
-dubai.calc();
-paris.calc();
-lima.calc();
-seattle.render();
-tokyo.render();
-dubai.render();
-paris.render();
-lima.render();
+for(let b=0 ;b<branchs.length ;b++){
+  branchs[b].calc();
+  branchs[b].render();
+}
+
+// seattle.calc();
+// tokyo.calc();
+// dubai.calc();
+// paris.calc();
+// lima.calc();
+// seattle.render();
+// tokyo.render();
+// dubai.render();
+// paris.render();
+// lima.render();
 finalRow();
 console.log(branchs);
 
