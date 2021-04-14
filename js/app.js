@@ -30,7 +30,7 @@ Store.prototype.cookiesHourly=function(){
 Store.prototype.calc=function(){
   this.randomCust();
   this.cookiesHourly();
-  
+
 };
 Store.prototype.render=function(){
   let tableRow=document.createElement('tr');
