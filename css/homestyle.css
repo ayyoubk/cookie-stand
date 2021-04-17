@@ -16,6 +16,21 @@ h1{
     margin: 0%;
     padding: 15px;
     display: inline-block;
+    font-family: 'Fredoka One', cursive;
+    color: salmon;
+}
+h2,h4{
+    font-family: 'Ubuntu', sans-serif;
+    color: navajowhite;
+}
+p{
+    font-family: 'Crimson Text', serif;
+    
+    color:darkgrey;
+
+}
+#salmon{
+    background-color: rgba(250, 128, 114, 0.137);;
 }
 nav{
     float: right; 
@@ -45,7 +60,12 @@ section img{
     margin-top: 10px;    
 }
 #family{
-    padding: 30px;
+    margin: 30px;
+    background-color: rgba(250, 128, 114, 0.137);
+}
+#family img{
+    width: 550px;
+    height: 380px;
 }
 #family p,#family h2{
     display: inline-block;
@@ -74,6 +94,7 @@ footer{
 }
 #loc{
     margin:30px;
+    background-color: rgba(250, 128, 114, 0.137);
 }
 iframe{
    height: 200px;
