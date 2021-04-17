@@ -10,6 +10,7 @@ body{
 header{
     background-color: rgba(222, 184, 135, 0.096);
     
+    
 }
 h1{
     margin: 0%;
@@ -70,4 +71,13 @@ footer{
     background-color: rgba(189, 183, 107, 0.39);
     text-align: center;
     padding: 0px;
+}
+#loc{
+    margin:30px;
+}
+iframe{
+   height: 200px;
+   width: 200px;
+   margin-right: 15px;
+    
 }
