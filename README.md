@@ -31,3 +31,7 @@
     1. write alot of line of HTML & CSS for public-facing index.html page.
     2. using images that provided by pat
 
+- April 14, 2021
+    1. added form to sales.html page that get some data from User side.
+    2. by using JavaScript made form interact with the other page elements.
+    3. some CSS line added
